@@ -17,7 +17,7 @@ RUN apk --no-cache add \
     sqlite-libs \
     sqlite-dev \
     readline \
-    bzip2-lib \
+    bzip2 \
     expat2 \
     gdbm \      
     liblzma \   
