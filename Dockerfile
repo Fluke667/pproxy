@@ -41,6 +41,7 @@ EXPOSE 8030/tcp
 EXPOSE 8040/tcp
 EXPOSE 8050/tcp
 EXPOSE 8080/tcp
+EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
 CMD ["./config.sh"]
