@@ -47,5 +47,4 @@ EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
 
-RUN chmod 0700 /config/pproxy.sh
 ENTRYPOINT ["/config/pproxy.sh"]
