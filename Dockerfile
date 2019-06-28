@@ -3,6 +3,9 @@ MAINTAINER Fluke667 <Fluke667@gmail.com>
 ARG TZ='Europe/Berlin'
 ENV TZ ${TZ}
 
+ENV KEY=/data/pproxy/server.key
+ENV CRT=/data/pproxy/server.crt
+
 RUN apk --no-cache add \
     build-base \
     git \
