@@ -18,11 +18,10 @@ RUN apk --no-cache add \
     sqlite-dev \
     readline \
     bzip2 \
-    expat2 \
+    libbz2 \
+    expat \
     gdbm \      
-    liblzma \   
-    libffi \   
-    ncursesw \
+    xz-dev \    
     && pip3 install --upgrade pip
     
 # Install Requirements
