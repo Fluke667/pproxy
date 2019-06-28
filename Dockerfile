@@ -47,4 +47,4 @@ VOLUME ["/data/pproxy"]
 
 COPY pproxy.sh /usr/local/bin/pproxy.sh
 RUN chmod 0700 /usr/local/bin/pproxy.sh
-ENTRYPOINT [ "/usr/local/bin/pproxy.sh" ]
+ENTRYPOINT ["/usr/local/bin/pproxy.sh"]
