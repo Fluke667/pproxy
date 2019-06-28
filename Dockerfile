@@ -24,6 +24,7 @@ RUN apk --no-cache add \
     xz-dev \
     libffi \
     libffi-dev \
+    nano \
     && pip3 install --upgrade pip
     
 # Install Requirements
