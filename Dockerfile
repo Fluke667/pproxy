@@ -41,5 +41,6 @@ EXPOSE 8050/tcp
 EXPOSE 8080/tcp
 
 VOLUME ["/data/pproxy"]
+CMD ["./config.sh"]
 
 ENTRYPOINT [ "pproxy" ]
