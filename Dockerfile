@@ -47,4 +47,4 @@ EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
 
-ENTRYPOINT ["/config/pproxy.sh"]
+ENTRYPOINT ["./config/pproxy.sh"]
