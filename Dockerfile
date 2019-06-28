@@ -13,7 +13,7 @@ RUN apk --no-cache add \
     python3 \
     python3-dev \
     gnupg \
-    sqlite3 \
+    sqlite \
     sqlite-libs \
     sqlite-dev \
     readline \
