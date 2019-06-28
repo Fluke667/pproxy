@@ -40,11 +40,12 @@ EXPOSE 8020/tcp
 EXPOSE 8030/tcp
 EXPOSE 8040/tcp
 EXPOSE 8050/tcp
+EXPOSE 8060/tcp
+EXPOSE 8070/tcp
 EXPOSE 8080/tcp
 EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
 
-COPY pproxy.sh /usr/local/bin/pproxy.sh
-RUN chmod 0700 /usr/local/bin/pproxy.sh
-ENTRYPOINT ["/usr/local/bin/pproxy.sh"]
+RUN chmod 0700 /config/pproxy.sh
+ENTRYPOINT ["/config/pproxy.sh"]
