@@ -29,7 +29,11 @@ RUN apk --no-cache add \
 # Install Requirements
 RUN pip3 install asn1crypto asyncssh cffi cryptography pproxy pycparser pycryptodome setuptools six
 
-
+EXPOSE 8010/tcp
+EXPOSE 8020/tcp
+EXPOSE 8030/tcp
+EXPOSE 8040/tcp
+EXPOSE 8050/tcp
 EXPOSE 8080/tcp
 
 ENTRYPOINT [ "pproxy" ]
