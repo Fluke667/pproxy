@@ -44,6 +44,6 @@ EXPOSE 8080/tcp
 EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
-CMD ["./config.sh"]
 
-ENTRYPOINT [ "pproxy" ]
+COPY pproxy.sh /pproxy.sh
+ENTRYPOINT [ "pproxy.sh" ]
