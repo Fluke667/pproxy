@@ -21,7 +21,8 @@ RUN apk --no-cache add \
     libbz2 \
     expat \
     gdbm \      
-    xz-dev \    
+    xz-dev \
+    libffi \
     && pip3 install --upgrade pip
     
 # Install Requirements
