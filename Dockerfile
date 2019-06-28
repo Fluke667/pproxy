@@ -23,6 +23,7 @@ RUN apk --no-cache add \
     gdbm \      
     xz-dev \
     libffi \
+    libffi-dev \
     && pip3 install --upgrade pip
     
 # Install Requirements
