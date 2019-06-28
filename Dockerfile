@@ -4,7 +4,6 @@ ARG TZ='Europe/Berlin'
 ENV TZ ${TZ}
 
 RUN apk --no-cache add \
-# Streisand Depencies
     build-base \
     git \
     linux-headers \
