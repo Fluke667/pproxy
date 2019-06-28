@@ -37,4 +37,6 @@ EXPOSE 8040/tcp
 EXPOSE 8050/tcp
 EXPOSE 8080/tcp
 
+VOLUME ["/data/pproxy"]
+
 ENTRYPOINT [ "pproxy" ]
