@@ -15,6 +15,8 @@ RUN apk --no-cache add \
     openssh \
     openssl \
     openssl-dev \
+    libsodium \
+    libsodium -dev \
     python3 \
     python3-dev \
     gnupg \
