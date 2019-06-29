@@ -31,6 +31,7 @@ RUN apk --no-cache add \
     libffi-dev \
     nano \
     dcron \
+    bash \
     && pip3 install --upgrade pip
 RUN mkdir -p /var/log/cron && mkdir -m 0644 -p /var/spool/cron/crontabs && touch /var/log/cron/cron.log && mkdir -m 0644 -p /etc/cron.d
 # Install Requirements
