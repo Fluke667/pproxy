@@ -2,6 +2,7 @@ FROM alpine:3.9
 MAINTAINER Fluke667 <Fluke667@gmail.com>  
 ARG TZ='Europe/Berlin'
 ENV TZ ${TZ}
+ENV LANG=C.UTF-8
 
 ENV KEY=/data/pproxy/server.key
 ENV CRT=/data/pproxy/server.crt
