@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 exec pproxy -l socks4+socks5://:8090#$USER:$PASS
 sleep 2
