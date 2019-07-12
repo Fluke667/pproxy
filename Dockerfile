@@ -2,9 +2,6 @@ FROM alpine:3.10
 MAINTAINER Fluke667 <Fluke667@gmail.com>  
 ARG TZ='Europe/Berlin'
 
-
-
-
 RUN apk --no-cache add \
     build-base \
     git \
