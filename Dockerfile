@@ -37,11 +37,6 @@ RUN mkdir -p /var/log/cron && mkdir -m 0644 -p /var/spool/cron/crontabs && touch
 # Install Requirements
 RUN pip3 install asn1crypto asyncssh cffi cryptography pproxy pycparser pycryptodome setuptools six
 
-EXPOSE 8010/tcp
-EXPOSE 8020/tcp
-EXPOSE 8030/tcp
-EXPOSE 8040/tcp
-EXPOSE 8050/tcp
 EXPOSE 8060/tcp
 EXPOSE 8070/tcp
 EXPOSE 8080/tcp
