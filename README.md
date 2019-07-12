@@ -24,7 +24,7 @@ docker run -it \
     -p 8080:8080 \
     -p 8070:8070 \
     -p 8060:8060 \
-    -v /data/ssl/certs:/etc/ssl/certs
+    -v /data/ssl/certs:/etc/ssl/certs \
     fluke667/pproxy
 ```
 
