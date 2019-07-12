@@ -1,8 +1,7 @@
 FROM alpine:3.10
 MAINTAINER Fluke667 <Fluke667@gmail.com>  
 ARG TZ='Europe/Berlin'
-ENV TZ ${TZ}
-#ENV LANG=C.UTF-8
+
 
 
 
@@ -37,10 +36,10 @@ RUN mkdir -p /var/log/cron && mkdir -m 0644 -p /var/spool/cron/crontabs && touch
 # Install Requirements
 RUN pip3 install asn1crypto asyncssh cffi cryptography pproxy pycparser pycryptodome setuptools six
 
-EXPOSE 8060/tcp
-EXPOSE 8070/tcp
-EXPOSE 8080/tcp
-EXPOSE 8090/tcp
+EXPOSE 8060
+EXPOSE 8070
+EXPOSE 8080
+EXPOSE 8090
 
 VOLUME ["/etc/ssl/certs"]
 
