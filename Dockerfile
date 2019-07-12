@@ -49,6 +49,11 @@ EXPOSE 8090/tcp
 
 VOLUME ["/data/pproxy"]
 
-COPY pproxy.sh /
-RUN chmod +x /pproxy.sh
-ENTRYPOINT ["/pproxy.sh"]
+#COPY pproxy.sh /
+#RUN chmod +x /pproxy.sh
+#ENTRYPOINT ["/pproxy.sh"]
+
+ADD ./config /config
+RUN chmod 0700 /config/*.sh
+RUN /config/cert.sh \
+    /config/pproxy.sh
