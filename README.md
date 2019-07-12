@@ -16,12 +16,16 @@ docker run -it --name pproxy -p 8080:8080 fluke667/pproxy -l ss+ssr+http+socks5:
 docker run -it --name pproxy -p 8080:8080 fluke667/pproxy -l http://chacha20:8080#$USER:$PASS
 
 docker run -it \
-    --name pproxy \
-    -p 8080:8080
-    -v /data/pproxy:/data/pproxy
-    -e USER=Username
-    -e PASS=Pasword
-    fluke667/pproxy -l http://chacha20:8080#$USER:$PASS
+   --privileged \
+   --name multivpn \
+   --net=host \
+   --env-file ./pproxy.env \
+    -p 8090:8090 \
+    -p 8080:8080 \
+    -p 8070:8070 \
+    -p 8060:8060 \
+    -v /data/ssl/certs:/etc/ssl/certs
+    fluke667/pproxy
 ```
 
 ### Examples:
