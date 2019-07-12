@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.10
 MAINTAINER Fluke667 <Fluke667@gmail.com>  
 ARG TZ='Europe/Berlin'
 ENV TZ ${TZ}
