@@ -41,7 +41,7 @@ EXPOSE 8070
 EXPOSE 8080
 EXPOSE 8090
 
-VOLUME ["/etc/ssl/crt"]
+VOLUME ["/etc/certs"]
 
 #COPY pproxy.sh /
 #RUN chmod +x /pproxy.sh
@@ -49,5 +49,5 @@ VOLUME ["/etc/ssl/crt"]
 
 ADD ./config /config
 RUN chmod 0700 /config/*.sh
-RUN /config/cert.sh \
+RUN /config/certs.sh \
     /config/pproxy.sh
