@@ -42,7 +42,7 @@ EXPOSE 8070/tcp
 EXPOSE 8080/tcp
 EXPOSE 8090/tcp
 
-VOLUME ["/data/pproxy"]
+VOLUME ["/etc/ssl/certs"]
 
 #COPY pproxy.sh /
 #RUN chmod +x /pproxy.sh
